@@ -6,7 +6,8 @@ https://pythonbasics.org/pyqt-list-box/
 from PyQt5 import QtCore, QtGui, uic
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QKeySequence, QPixmap
+from PyQt5.QtGui import QKeySequence, QImage, QPixmap
+#import threaded_tcp_scan.py
 
 import sys
 
@@ -31,7 +32,7 @@ class ButtonFunctions():
         print(device)
     
 
-class MainWindow(QMainWindow, ButtonFunctions): #Inherits attributes from QMainWindow and Button Functions
+class MainWindow(QMainWindow, ButtonFunctions): #Inherits attributes from QMainWindow and ButtonFunctions
     
     def __init__(self,*args,**kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
@@ -164,7 +165,7 @@ class Shell():
     def __init__(self):
         pass
 
-class Network_Map()
+class Network_Map():
     #A class for the Network Map (NetworkX)
     pass
 
